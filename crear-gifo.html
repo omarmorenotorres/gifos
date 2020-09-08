@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/crearGifo.css">
+    <title>GIFOS</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logoDesktop" src="./img/logo-desktop.svg" alt="logoMobile" class="logoDesktop"/></a>
+        <img src="https://dummyimage.com/25x25" alt="logoDesktop" class="logoMobile"/>
+        <a href="index.html"><img id="logoNocturno" src="./img/logo-desktop-modo-noc.svg" alt="logoNocturno" class="logoNocturno"/></a>
+        <button class="buttonPlus" type="button"><a class="plusBtn" href="crear-gifo.html">+</a></button>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="checkbox"/>
+                <span class="span"></span>
+                <span class="span"></span>
+                <span class="span"></span>
+                <ul id="menuList">
+                    <li><a href="#" id="modeName" onclick="modeChange()">Modo Nocturno</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="mis-gifos.html">Mis GIFOS</a></li>
+                </ul>
+            </div>
+        </nav>        
+    </header>
+
+    <main>
+        <img class="camera" src="/img/camara.svg" alt=""> 
+        <img class="camera1" src="/img/element-luz-camara.svg" alt=""> 
+        
+        <div class="marco">
+            <div class="marcoInterno">
+                <div class="cuadrado1"></div>
+                <div class="cuadrado3"></div>
+                <div class="cuadrado2"></div>
+                <div class="cuadrado4"></div>
+                <video class="videoPlayer" id="video"></video>
+                <div class="textContainer" id="textContainer">                    
+                    <div class="txtTitleInfo" id="txtOne">Aquí podrás </div>
+                    <div class="txtTitleInfo" id="txtTwo">crear tus propios <span class="textAditional">GIFOS</span></div>
+                    <div class="txtDescriptionInfo" id="txtThree">¡Crea tu GIFO en sólo 3 pasos!</div>                    
+                    <div class="txtDescriptionInfo" id="txtFour">(sólo necesitas una cámara para grabar un video)</div>                    
+                </div>
+            </div>
+            <a class="reRecord" id="reRecord" href="#">REPETIR CAPTURA</a>
+            <div class="time" id="time">                
+                <div class="reloj" id="Horas">00</div>
+                <div class="reloj" id="Minutos">:00</div>
+                <div class="reloj" id="Segundos">:00</div>
+            </div>
+            
+        </div>
+        <img class="cinta" src="/img/pelicula.svg" alt=""> 
+        <div class="buttonContainer">
+            <a class="boton" id="btnOne" href="">1</a>
+            <a class="boton" id="btnTwo">2</a>
+            <a class="boton" id="btnThree">3</a>
+        </div>
+        <div class="initContainer">
+            <a class="init" id="btnStart" >COMENZAR</a>
+            <button class="init" id="btnRecord" >GRABAR</button>
+            <button class="init" id="btnStop" >FINALIZAR</button>
+            <button class="init" id="btnUpGifo" >SUBIR GIFO</button>
+        </div>
+    </main>
+    <footer>
+        <div class="container-share">            
+            <div class="share-text" id="share-text">Compartir en:</div>
+            <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>            
+        </div>
+        <div class="container-text-reserved" id="container-text-reserved">© GIFOS 2020 All Rights Reserved.</div>
+    </footer>
+    
+
+    <script src="https://use.fontawesome.com/c2550b0eba.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/misGifos.js"></script>
+
+</body>
+</html>

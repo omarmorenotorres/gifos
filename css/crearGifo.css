@@ -1,0 +1,206 @@
+.camera{
+    width: 100px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+
+.camera1{
+    width: 80px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 4%;
+    margin-left: 13%;
+}
+
+.cinta{
+    float: right;
+    width: 100px;
+    margin-right: 5%;    
+}
+
+.marco{
+    margin-top: 110px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: solid 1px #572EE5;
+    height: 300px;
+}
+
+.cuadrado1{
+    width: 20px;
+    height: 20px;
+    border: solid 1px #50E3C2;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-bottom: none;
+    border-right: none;
+}
+
+.cuadrado2{
+    width: 20px;
+    height: 20px;
+    border: solid 1px #50E3C2;
+    margin-left: 10px;
+    margin-top: 240px;
+    border-top: none;
+    border-right: none;
+}
+
+.cuadrado3{
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #50E3C2;
+    margin-right: 17px;
+    margin-top: -20px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.cuadrado4{
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #50E3C2;
+    margin-right: 10px;
+    margin-top: -20px;
+    border-top: none;
+    border-left: none;
+}
+
+.textContainer{    
+    margin-top: -200px;
+    text-align: center;
+}
+
+.txtTitleInfo{
+    color: #572EE5;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.txtDescriptionInfo{
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.textAditional{
+    color: #50E3C2;
+}
+
+.buttonContainer{
+    margin: 0 auto;
+    margin-top: 29px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: solid 6px #572EE5;
+    width: 70%;
+}
+
+.boton{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px #572EE5;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.active{
+    background-color: #572EE5;
+    color: #fff;
+}
+
+/*.boton:hover{
+    background-color: #572EE5;
+    color: #fff;
+}*/
+
+.initContainer{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.init{
+    padding: 15px;
+    text-decoration: none;
+    border: solid 1px #572EE5;
+    border-radius: 25px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.init:hover{
+    color: #fff;
+    background-color: #572EE5;
+}
+
+#btnRecord,
+#btnStop,
+#btnUpGifo,
+#reRecord,
+#time{
+    display: none;
+}
+
+.reRecord{
+    width: 135px;
+    margin-top: 320px;
+    margin-left: 85%;
+    justify-content: right;
+    display: flex;
+    text-decoration: none;
+    border-bottom: solid 2px #5ED7C6;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #572EE5;
+}
+
+.time{
+    margin-top: 320px;
+    width: 135px;
+    margin-top: 320px;
+    margin-left: 85%;
+    justify-content: right;
+    display: flex;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #572EE5;
+}
+
+.videoPlayer{
+    margin: 0 auto;
+    margin-top: -280px;
+    display: none;
+    width: 48%;
+    height: 280px;
+}
+
+.myGif{
+    width: 260px;
+    height: 220px;
+}
+
+.myGif:hover{
+    filter: invert(80%);
+}
+
+footer{
+    padding-top: 5px;
+    height: 70px;
+}
+

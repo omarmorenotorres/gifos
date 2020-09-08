@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GIFOS</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logoDesktop" src="./img/logo-desktop.svg" alt="logoMobile" class="logoDesktop"/></a>
+        <a href="index.html"><img src="https://dummyimage.com/25x25" alt="logoDesktop" class="logoMobile"/></a>
+        <a href="index.html"><img id="logoNocturno" src="./img/logo-desktop-modo-noc.svg" alt="logoNocturno" class="logoNocturno"/></a>
+        <button class="buttonPlus" type="button"><a class="plusBtn" href="crear-gifo.html">+</a></button>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="checkbox"/>
+                <span class="span"></span>
+                <span class="span"></span>
+                <span class="span"></span>
+                <ul id="menuList">
+                    <li><a href="#" id="modeName" onclick="modeChange()">Modo Nocturno</a></li>
+                    <hr class="divider">
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <hr class="divider">
+                    <li><a href="mis-gifos.html">Mis GIFOS</a></li>
+                    <hr class="divider">
+                </ul>
+            </div>
+        </nav>        
+    </header>
+
+    <main>
+        <section>
+            <div class="text-principal" id="text-principal">Inspírate, busca, guarda, y crea los mejores <span class="text-principal-color" id="text-principal-color">GIFOS</span></div>
+            <div class="img-principal"></div>
+            <div class="search">
+                <input type="text" id="input" onkeypress="search()" placeholder="Busca GIFOS y más">
+                <i id="lupa" class="fa fa-search" aria-hidden="true" onclick="searchGifs()"></i>
+                <i id="close" class="fa fa-close" aria-hidden="true"></i>
+                <div class="results" id="results"></div>
+            </div>    
+            
+            <div class="box">
+                <div class="text-secondary" id="text-secondary">Trending:</div>
+                <div class="text-third" id="text-third"></div>
+            </div>            
+        </section>
+
+        <section class="section-gif">
+            <hr class="web-divider" id="web-divider">
+            <h2 class="search-title" id="search-title"></h2>
+            <div class="fail-search" id="fail-search">
+                <div class="fail-search-img"></div>
+                <div class="fail-search-text">Intenta con otra búsqueda.</div>
+            </div>
+            <div class="lista-gifs" id="lista-gifs"></div>
+            <a class="btn-see-more" id="btn-see-more" href="#text-secondary">VER MÁS</a>
+        </section>
+        <section class="section-gif" id="section-gif">
+            <div class="section-gif-tittle" id="section-gif-tittle">Trending GIFOS</div>
+            <div class="section-gif-description" id="section-gif-description">Mira los últimos GIFOS de nuestra comunidad.</div>
+            
+            <!--Acá va el carousel-->            
+            <div class="contenedor">
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i id="leftArrow" class="fa fa-angle-left" aria-hidden="true"></i>
+                    </button>
+    
+                    <div class="contenedor-carousel" id="contenedor-carousel">
+                        <div class="carousel" id="carousel">                        
+                        </div>
+                    </div>
+    
+                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-share">            
+            <div class="share-text" id="share-text">Compartir en:</div>
+            <div class="social-icons" id="social-icons" >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>            
+        </div>
+        <div class="container-text-reserved" id="container-text-reserved">© GIFOS 2020 All Rights Reserved.</div>
+        
+    </footer>
+    <div id="modal"></div>
+   
+
+
+    
+    <script src="https://use.fontawesome.com/c2550b0eba.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
